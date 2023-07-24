@@ -2,14 +2,20 @@ import sys
 import pandas as pd
 import os
 import logging
+from logging.handlers import RotatingFileHandler
 from pyspark.sql import SparkSession
 
 # Initialize a SparkSession
 spark = SparkSession.builder.appName("KommatiPara").getOrCreate()
 
-# Set up logging
-logging.basicConfig(filename='data_cleaning.log', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+# Set up rotating logging
+log_file = 'data_cleaning_rot.log'
+log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+log_handler = RotatingFileHandler(log_file, maxBytes= 4000000,backupCount=4)
+log_handler.setFormatter(log_formatter)
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+logger.addHandler(log_handler)
 
 
 # Paths used for the data
