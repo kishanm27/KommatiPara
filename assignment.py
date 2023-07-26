@@ -24,7 +24,16 @@ df2_path = '../KommatiPara/DATA/dataset_two.csv'
 df_path = '../KommatiPara/DATA/'
 
 def clean_data(path_x, path_y, countries):
+    """ This function cleans the data
+    
+    This function performs data cleaning and transformation tasks:
 
+    Import data from the specified paths.
+    Filter the data based on the provided country list using the filter_countries() function.
+    Rename the columns using the rename_column() function.
+    Remove personal credentials from the two datasets.
+    Finally, it joins the transformed datasets and saves the result in a CSV file.
+    """
   # Df creation log
     logging.info("Creating DataFrame from {} and {}".format(path_x, path_y))
 
@@ -71,11 +80,20 @@ def clean_data(path_x, path_y, countries):
     return df
 
 def filter_countries(df,column: str, countries):
+    """Return filtered data
+    
+    This function takes tree arguments: the data, column name and a list of countries.
+    The function filters out every other country from the data except the ones in the list.
+    """
     df = df.filter(df[column].isin(countries))
     return df
 
 
 def rename_column(df, old_name, new_name):
+    """Returns data with the new given column names
+    
+    This function uses the Pyspark withColumnRenamed to rename a column
+    """
     return df.withColumnRenamed(old_name, new_name)
 
 # Call the data cleaning function

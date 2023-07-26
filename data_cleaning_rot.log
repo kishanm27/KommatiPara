@@ -5,3 +5,10 @@
 2023-07-24 16:55:38,842 - INFO - Joined DataFrames
 2023-07-24 16:55:38,865 - INFO - Renamed columns
 2023-07-24 16:55:40,568 - INFO - DataFrame saved to CSV: /Users/kishanminguel/Documents/Uni/jupyter/KommatiPara/dataset_cleaned
+2023-07-26 08:37:41,340 - INFO - Creating DataFrame from ../KommatiPara/DATA/dataset_one.csv and ../KommatiPara/DATA/dataset_two.csv
+2023-07-26 08:37:47,394 - INFO - Filtered Df1 based on these given countries: ['United Kingdom', 'Netherlands']
+2023-07-26 08:37:47,404 - INFO - Removed identifiable info from df1
+2023-07-26 08:37:47,411 - INFO - Dropped credit number column from df2
+2023-07-26 08:37:47,440 - INFO - Joined DataFrames
+2023-07-26 08:37:47,467 - INFO - Renamed columns
+2023-07-26 08:37:49,099 - INFO - DataFrame saved to CSV: /Users/kishanminguel/Documents/Uni/jupyter/KommatiPara/dataset_cleaned
