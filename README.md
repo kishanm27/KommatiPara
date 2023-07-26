@@ -1,12 +1,11 @@
 # KommatiPara
 
-This Python script contains a data cleaning and transformation utility, specifically designed for the **KommatiPara** project. The script utilizes both the **PySpark** and **pandas** libraries to process and clean the input datasets.
+This Python script contains a data cleaning and transformation utility, specifically designed for the **KommatiPara** project. The script utilizes both the **PySpark** libraries to process and clean the input datasets.
 
 ### Requirements
 
 Make sure to have the following Python packages installed in your environment before running the script:
 
-- **pandas**
 - **pyspark**
 
 ### Functionality
