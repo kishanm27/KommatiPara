@@ -1,6 +1,6 @@
 import unittest
 from pyspark.sql import SparkSession
-from assignment import clean_data, filter_countries
+from para_pack.assignment import clean_data, filter_countries
 
 class TestDataCleaning(unittest.TestCase):
     @classmethod

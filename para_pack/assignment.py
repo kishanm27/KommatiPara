@@ -1,5 +1,5 @@
 import sys
-import pandas as pd
+from para_pack import pandas as pd
 import os
 import logging
 from logging.handlers import RotatingFileHandler
