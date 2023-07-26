@@ -5,7 +5,7 @@ from para_pack.assignment import clean_data, filter_countries
 class TestDataCleaning(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        # Create or get the SparkSession
+        # Create or get the SparkSessionn
         cls.spark = SparkSession.builder.appName("TestCleanData").getOrCreate()
 
         # Paths used for the data

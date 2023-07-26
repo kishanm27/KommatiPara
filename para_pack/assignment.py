@@ -96,6 +96,6 @@ def rename_column(df, old_name, new_name):
     """
     return df.withColumnRenamed(old_name, new_name)
 
-# Call the data cleaning function
+# Call the data cleaning functionn
 clean_data(df1_path,df2_path, ['United Kingdom', 'Netherlands'])
 spark.stop()
