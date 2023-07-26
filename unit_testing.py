@@ -9,8 +9,8 @@ class TestDataCleaning(unittest.TestCase):
         cls.spark = SparkSession.builder.appName("TestCleanData").getOrCreate()
 
         # Paths used for the data
-        cls.df1_path = '../ABN/DATA/dataset_one.csv'
-        cls.df2_path = '../ABN/DATA/dataset_two.csv'
+        cls.df1_path = '../KommatiPara/DATA/dataset_one.csv'
+        cls.df2_path = '../KommatiPara/DATA/dataset_two.csv'
         cls.countries = ['United Kingdom', 'Netherlands']
 
         # Load the DataFrame using the clean_data function or any other method
