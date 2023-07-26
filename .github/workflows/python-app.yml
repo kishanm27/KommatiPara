@@ -32,4 +32,4 @@ jobs:
    
     - name: Test 
       run: |
-        python parra_pack/unit_testing.py
+        pytest parra_pack/unit_testing.py
