@@ -32,4 +32,5 @@ jobs:
    
     - name: Test 
       run: |
-        pytest parra_pack/unit_testing.py
+        pytest unit_testing.py
+        
